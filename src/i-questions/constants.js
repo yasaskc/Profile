@@ -1,0 +1,56 @@
+export const tagColor = {
+  ReactJs: "#2db7f5",
+  CSS: "#f52df1bf",
+  Javascript: "#fa8a06",
+  Scenario: "#81cc02c9",
+  "Work Flow": "#395dffb0",
+  "React Native": "#0f68e7",
+  "Frequently Asked": "#ef0404c7",
+  Webpack: "#026abe",
+  Redux: "#764abc",
+  Agile: "#02804bc7",
+  HTML: "#f06529",
+  UX: "#ff2389",
+  Testing: "#7e00f1d1",
+  iOS: "",
+  Android: "",
+};
+
+export const tagsData = [
+  "Frequently Asked",
+  "ReactJs",
+  "React Native",
+  "Redux",
+  "Javascript",
+  "CSS",
+  "HTML",
+  "Scenario",
+  "Work Flow",
+  "Webpack",
+  "Agile",
+  "UX",
+  "Testing",
+];
+
+export const subTagsData = {
+  "Frequently Asked": ["Component Life Cycle", "Redux Flow"],
+  ReactJs: [
+    "useContext",
+    "Life Cycle",
+    "Hooks",
+    "controlled vs uncontrolled component",
+    "JSX syntax",
+    "VDOM in React",
+  ],
+  "React Native": ["iOS", "Android"],
+  Testing: ["Enzyme", "React Testing Library"],
+  Redux: ["saga", "redux flow", "middleware"],
+  CSS: ["Advantages of Sass"],
+  Javascript: [
+    "closure",
+    "Arrow functions",
+    "spread operator",
+    "let vs const",
+    "ES6 features",
+  ],
+};

@@ -1,0 +1,162 @@
+.launch-page {
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+  position: absolute;
+
+  @include desktop {
+    background-color: $primary-color;
+  }
+
+  @include tablet {
+    background-color: $primary-color;
+  }
+
+  @include mobile {
+    //background-color: white;
+  }
+
+  &__name {
+    animation: linear;
+    animation-name: name;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+
+    @include mobile {
+      top: 10%;
+    }
+  }
+
+  &__links {
+    position: absolute;
+    animation: linear;
+    animation-name: links;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    display: flex;
+    top: 57%;
+    //opacity: 0.5;
+
+    :hover {
+      color: gray;
+    }
+
+    @include tablet {
+      top: 55%;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      top: 15%;
+    }
+  }
+
+  &__link {
+    color: white;
+    font-size:xx-large;
+    font-family: $logo-font;
+    text-decoration: none;
+    margin: 0 10px;
+    //border: 1px solid white;
+    color: transparent !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+
+    &:hover {
+      -webkit-text-stroke-width: 2px;
+      //text-decoration: underline;
+    }
+
+    @include tablet {
+      color: white;
+      font-size: 3vw;
+    }
+
+    @include mobile {
+      margin: 10px 0;
+      //  color: $primary-color;
+      font-size: 10vw;
+    }
+
+    &--seperator {
+      color: white;
+      font-size: 2vw;
+      font-weight: 100;
+      margin: 0 10px;
+
+      @include tablet {
+        color: white;
+        font-size: 5vw;
+      }
+
+      @include mobile {
+        // color: $primary-color;
+        font-size: 10vw;
+        display: none;
+      }
+    }
+  }
+
+  &__bottom__links {
+    position: absolute;
+    bottom: 3%;
+
+    a {
+      color: white;
+      text-decoration: underline;
+      opacity: 0.5;
+    }
+  }
+}
+
+.name {
+  &__letter {
+    color: white;
+    font-size: 6vw;
+    font-family: $logo-font;
+
+    @include mobile {
+      // color: black;
+      font-size: 12vw;
+    }
+
+    &--lname {
+      font-size: 6vw;
+      font-family: $logo-font;
+      color: transparent !important;
+      -webkit-text-stroke-width: 0.3px;
+      -webkit-text-stroke-color: rgb(255, 255, 255);
+
+      @include mobile {
+        font-size: 12vw;
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: $primary-color;
+      }
+    }
+  }
+}
+
+@keyframes name {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes links {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}

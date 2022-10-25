@@ -1,0 +1,51 @@
+{
+  "name": "portfolio",
+  "homepage": "http://belvikram.com/",
+  "version": "0.1.0",
+  "dependencies": {
+    "@ant-design/icons": "^4.6.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.16.13",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "highlight.js": "^11.2.0",
+    "loaders.css": "^0.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-ga": "^3.3.0",
+    "react-loaders": "^3.0.1",
+    "react-markdown": "^7.0.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "sass": "^1.39.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "go-live": "rm -rf docs && npm run build && mv build docs && git add docs && git commit -m 'Bundle build with changes' && git push"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
