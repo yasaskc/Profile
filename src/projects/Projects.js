@@ -1,14 +1,8 @@
 import React, { Component } from "react";
 import Layout from "../layout/Layout";
-import CMS from "./CMS";
-import NetSence from "./NetSence";
-import AgTech from "./AgTech";
-import CoHo from "./CoHo";
 import CitySpace from "./CitySpace";
-import Vdp from "./Vdp";
 import SmartParking from "./SmartParking";
 import ProConnect from "./ProConnect";
-import Swabiz from "./Swabiz";
 import MyHub from "./MyHub";
 import Button from "../common/button/Button";
 
@@ -41,14 +35,8 @@ export default class Blog extends Component {
           </div>
           <div className="projects__p-cards">
             <MyHub />
-            <Swabiz />
             <ProConnect />
-            <CMS />
-            <NetSence />
-            <AgTech />
-            <CoHo />
             <CitySpace />
-            <Vdp />
             <SmartParking />
           </div>
         </div>
