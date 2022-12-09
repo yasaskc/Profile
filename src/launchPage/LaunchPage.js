@@ -19,8 +19,6 @@ export default class LaunchPage extends Component {
           <span className="name__letter--lname">r</span>
           <span className="name__letter--lname">l</span>
           <span className="name__letter--lname">a</span>
-          {/* <span className='name lName'>d</span> 
-              <span className='name lName'>e</span>   */}
         </div>
         <div className="launch-page__links">
           <Link to="/blog">
@@ -38,9 +36,6 @@ export default class LaunchPage extends Component {
           <Link to="/projects">
             <span className="launch-page__link">Projects</span>
           </Link>
-          {/* <span className='launch-page__link--seperator'>|</span> */}
-          {/* <a href='https://itunes.apple.com/us/developer/vikram-belde/id1164307305' className='launch-page__link'>Apps</a> */}
-          {/* <span className='launch-page__link--seperator'>|</span> */}
           <a
             href="https://www.linkedin.com/in/chandra-k-2601/"
             target="_blank"
@@ -49,8 +44,6 @@ export default class LaunchPage extends Component {
           >
             LinkedIn
           </a>
-          {/* <span className='launch-page__link--seperator'>|</span> */}
-          {/* <span className='launch-page__link--seperator'>|</span> */}
           <Link to="/my-interview">
             <span className="launch-page__link">My Interview</span>
           </Link>
